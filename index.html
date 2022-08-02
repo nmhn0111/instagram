@@ -2,12 +2,9 @@
     <head>
         <link href="style.css" rel="stylesheet">
         <link href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" rel="stylesheet">
+        <script src="script.js"></script>
     </head>
     <body>
-        <script>
-            console.log("test")
-            alert("오늘 기분은 어떠신가요?")
-        </script>
         <div id="top">
             <img src="https://www.instagram.com/static/images/web/logged_out_wordmark.png/7a252de00b20.png" />
             <input type="search" value="🔎검색"/>
@@ -23,18 +20,21 @@
                 <img class="circle_pic" src="image/profile.jpg"/>
             </div>
             <div id="profile_info">
-                <div id="id">nmhn_d<i class="fas fa-cog"></i></div>
+                <div id="id">
+                    <span>nmhn_d</span>
+                    <i class="fas fa-cog"></i>
+                </div>
                 <button>프로필 편집</button>
             </div>
         </div>
         <div>
             <p>
-                <strong>
+                <strong id="userInfo">
                     김남훈 (Namhun Kim)
                 </strong><br/>
-                개발자 및 디자이너
+                <span id="summary">개발자 및 디자이너</span>
             </p>
-            <p>
+            <p id="profileDetail">
                 <a href="https://needleworm.github.io">
                     needleworm.github.io
                 </a>
